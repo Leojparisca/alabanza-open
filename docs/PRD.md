@@ -77,3 +77,14 @@ ReglaRotacion, NotaPersonal.
   este PRD y anota cada decisión ambigua en docs/DECISIONS.md.
 - Los criterios de aceptación los verifica el product owner
   (Leonard) sin leer código.
+
+## 9. Patrón de navegación (agregado tras lección de M2)
+
+- Móvil (< 768px): barra de pestañas inferior fija (bottom tab bar)
+  con ícono + etiqueta por sección; altura táctil mínima 48px;
+  respeta el safe-area inferior (env(safe-area-inset-bottom)).
+  Barra superior con título de página a la izquierda y acciones contextuales a la derecha (crear, volver).
+  PROHIBIDO: sidebars fijos o desplegables en móvil.
+- Escritorio (>= 768px): se conserva el sidebar lateral de M2.
+- El contenido principal lleva padding-bottom en móvil para que la barra inferior no tape datos ni botones.
+- Máximo 5 ítems en la barra inferior; si un milestone futuro necesita más, se agrupan bajo un ítem "Más".
