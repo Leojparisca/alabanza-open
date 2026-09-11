@@ -20,6 +20,9 @@ para un equipo de 50 personas con presupuesto cero.
 
 1. Sin IA dentro del producto: toda función crítica es determinística
    (la transposición de acordes es un algoritmo, no un modelo).
+   **chord-transposer es la única dependencia externa permitida
+   (además de las ya instaladas en M1-M3), porque es determinística
+   y alineada con el principio de no-IA.**
 2. Sin muros de pago ni límites por usuario.
 3. Español primero: toda la interfaz nace en español.
 4. Mobile-first: el músico la usa en su teléfono en ensayo y en culto.
